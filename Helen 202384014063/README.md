@@ -34,3 +34,14 @@ flowchart LR
     U --> C[Mark task as completed]
     U --> D[Delete task]
 ```
+
+
+## Activity Flowchart
+```mermaid
+flowchart LR
+    A[Start] --> B[Input task]
+    B --> C{Confirm save?}
+    C -->|Yes| D[Save task to list]
+    C -->|No| E[Cancel]
+    D --> F[Show task list]
+```
