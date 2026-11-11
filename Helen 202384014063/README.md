@@ -7,19 +7,30 @@ Users can add to-do tasks, view the task list, mark tasks as completed and delet
 
 ## Technology I will use
 - Backend: Python + Flask
-- Frontend: HTML, JavaScript
+- Frontend: HTML, CSS and JavaScript
 
+## What makes this project different
 Most ready-made task management software has many extra functions and is heavy.
 My system only focuses on the core to-do tracking features. It is simple, lightweight and easy to run on a local computer.
 
-## Next plan
-- I will finish coding the prototype, draw use case diagram and activity diagram, then test all functions.
-- In the future, I can add a database to save data permanently.
+## Current Prototype Status
+I have completed the basic prototype code. The application can run locally.
+Task data is stored in program memory. **There is no user login system and no database at this stage.** All data will disappear once the Flask server restarts.
+
+## Week 3 Progress & Tasks
+This week I will design and build the web application with Flask. My tasks are as follows:
+1. Develop and improve webpage interface style with HTML and CSS in VS Code.
+2. Complete Mermaid diagrams including use‑case diagram and activity diagram.
+3. Test all core functions manually: add tasks, mark tasks complete, delete tasks.
+4. Complete and optimise this README.md document.
+5. Organise project files and upload the whole project to GitHub after testing passes.
 
 ## Use Case Diagram
 ```mermaid
 flowchart LR
     U[User]
     U --> A[Add new task]
-    U --> B[Mark task completed]
-    U --> C[Delete task]
+    U --> B[View task list]
+    U --> C[Mark task as completed]
+    U --> D[Delete task]
+```
