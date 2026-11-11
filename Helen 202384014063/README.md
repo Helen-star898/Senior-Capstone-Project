@@ -18,8 +18,8 @@ My system only focuses on the core to-do tracking features. It is simple, lightw
 
 ## Use Case Diagram
 ```mermaid
-usecase
-    actor User
-    User --> (Add new task)
-    User --> (Mark task completed)
-    User --> (Delete task)
+flowchart LR
+    U[User]
+    U --> A[Add new task]
+    U --> B[Mark task completed]
+    U --> C[Delete task]
