@@ -97,5 +97,4 @@ flowchart LR
 - [x] Complete Mermaid diagrams including use-case diagram and activity diagram.
 - [x] Test all core functions manually: add tasks, mark tasks complete, delete tasks.
 - [x] Complete and optimise this README.md document.
-- [ ] Organise project files and upload the whole project to GitHub after testing passes.
- 
+- [x] Organise project files and upload the whole project to GitHub after testing passes.
