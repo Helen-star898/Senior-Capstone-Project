@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Task Manager</title>
+  <!-- Custom stylesheet for the whole page -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>My Task Manager</h1>
+      <p class="subtitle">A lightweight to-do list</p>
+    </header>
+
+    <!-- Form for adding a new task. Submitting is handled by script.js -->
+    <form id="task-form" class="task-form" autocomplete="off">
+      <input
+        id="task-input"
+        type="text"
+        maxlength="120"
+        placeholder="What needs to be done?"
+        aria-label="New task"
+        required
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- The task list is rendered here by JavaScript -->
+    <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+    <!-- Shown when there are no tasks yet -->
+    <p id="empty-message" class="empty-message">No tasks yet. Add your first one above.</p>
+
+    <footer class="app-footer">
+      <span id="task-count">0 tasks</span>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Flask==3.0.3
+
+# AI declaration: This file was generated with the assistance of DeepSeek AI.
