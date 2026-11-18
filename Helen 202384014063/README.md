@@ -98,3 +98,4 @@ flowchart LR
 - [x] Test all core functions manually: add tasks, mark tasks complete, delete tasks.
 - [x] Complete and optimise this README.md document.
 - [ ] Organise project files and upload the whole project to GitHub after testing passes.
+ 
